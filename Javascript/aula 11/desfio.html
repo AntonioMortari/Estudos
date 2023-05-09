@@ -12,7 +12,7 @@
 
     <form>
         <label for="txtpais">
-            Digite seu país
+            Digite seu país:
             <input type="text" name="txtpais" id="txtpais">
         </label>
 
@@ -28,15 +28,18 @@
     <script>
         function check(){
             var pais = document.getElementById('txtpais')
-
             p = String(pais.value)
-
+            
             r = document.getElementById('res')
 
-            if (p == "Brasil"){
-                r.innerHTML = 'Você é brasileiro'
+            r.innerHTML = `Você nasceu em ${p} , então:`
+
+            p = (p.toUpperCase())
+
+            if (p == "BRASIL"){
+                r.innerHTML += ' Você é brasileiro'
             }else {
-                r.innerHTML = 'Você é estrangeiro !'
+                r.innerHTML += ' Você é estrangeiro !'
             }
 
 
