@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste FlexBox Menu</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            transition: 0.4s;
+        }
+
+        img:hover{
+            width: 70px;
+            height: 70px;
+        }
+
+        .cabecalho{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+            border: 1px solid black;
+            
+        }
+
+        .cabecalho-menu{
+            display: flex;
+            flex-direction: row;
+            gap: 30px
+        }
+
+        .cabecalho-menu-item{
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+
+        
+        .cabecalho-menu-item:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header class="cabecalho">
+       <img src="logo.png" class="logotipo" alt="">
+
+       <nav class="cabecalho-menu">
+            <a href="#" class="cabecalho-menu-item">Item 1</a>
+            <a href="#"class="cabecalho-menu-item">Item 2</a>
+            <a href="#" class="cabecalho-menu-item">Item 3</a>
+            <a href="#" class="cabecalho-menu-item">Item 4</a>
+            <a href="#" class="cabecalho-menu-item">Item 5</a>
+            <a href="#" class="cabecalho-menu-item">Item 6</a>
+       </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

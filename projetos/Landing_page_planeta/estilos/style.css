@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --verde: rgb(145,196,62);
+}
+/* circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #E8CBC0, #636FA4);
+    clip-path: circle(40% at right 100%) ;
+    z-index: -1;
+
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body,html{
+    height: 100vh;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+header > img{
+    width: 70px;
+}
+
+button.botao{
+    background-color: var(--verde);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 7px;
+    font-weight: 600;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.botao:hover{
+    background-color: rgb(163, 236, 45);
+}
+
+button#b1{
+    width: 100px;
+    height: 36px;
+}
+
+main{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    height: 100%;
+}
+
+main section{
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+main section div.title{
+    line-height: 3.7em;
+    transition: 0.3s;
+}
+
+main section div.title #b2{
+    width: 130px;
+    height: 35px;
+}
+
+main section div.title h1{
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+main section div.title h2{
+    text-transform: uppercase;
+}
+
+main section div.text{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: rgba(58, 57, 57, 0.767);
+    align-items: center;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+main section div.text h4{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+main section div.text p{
+    font-size: 1.1em;
+}
+
+main div.imagem img{
+    position: relative;
+    right: 30px;
+    height:500px;
+    transition: 0.5s;
+}
+
+footer{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 10px;
+    align-items: center;
+}
+
+footer p  a{
+    text-decoration: none;
+    color: rgb(91, 141, 10);
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1050px){
+    main section{
+        padding: 10px 20px;
+    }
+    main div.imagem img{
+        right: 0px;
+        display: block;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:850px){
+    
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    main section div.title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    main section div.text{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    main section div.text div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        text-align: justify;
+    }
+
+} 

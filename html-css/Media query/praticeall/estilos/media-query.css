@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (orientation:portrait){
+    nav > a {
+        display: none;
+    }
+
+    header > img{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    div.child{
+        height: 120px;
+    }
+
+    div.child:hover{
+        height: 130px;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1200px){
+    img#tablet{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    img#tablet{
+        display: none;
+    }
+
+    img#pc{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+}

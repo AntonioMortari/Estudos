@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+
+    <style>
+        @media screen and (max-width:600px){
+            body > div.conteiner{
+                flex-wrap: wrap;
+                justify-content: start;
+            }
+        }
+        @media screen and (max-width:800px){
+            div.conteiner > div.child{
+                height: 100px;
+            }
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner{
+            height:100vh;
+            display: flex;
+            flex-direction: row;
+            
+            
+            
+        }
+
+        div.child{
+            width: 50%;
+            height: 200px;
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 2em;
+            transition: 0.4s;
+        }
+        .child:hover{
+            width: 25%;
+            height: 250px;
+            background-color: rgb(199, 1, 1);
+            border: 3px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+
+    </div>
+
+
+    
+</body>
+</html>

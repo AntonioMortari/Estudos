@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Tablet */
+
+@media screen and (max-width:1010px){
+    main > section{
+        width: 90%;
+    }
+
+    main > section.conteudo > h2#mdestaque{
+        font-size: 2em;
+    }
+
+    #button{
+        width: 50%;
+        font-size: 1em;
+        
+    }
+}
+
+
+/* Celular */
+
+@media screen and (max-width:810px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main > section.conteudo{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    main > div.imagem{
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    main > div.imagem > img{
+        width: 55%;
+        margin: 0px;
+        margin: auto;
+        right: 0px;
+    }
+
+    #button{
+        margin: auto;
+        margin-top: 50px;
+        width: 30%;
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+}
+
+@media screen and (max-width:550px){
+    header > nav > a{
+        font-size: 0.8em;
+        
+    }
+}

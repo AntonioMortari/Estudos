@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Tablet */
+
+@media screen and (max-width:900px){
+    div.imagem{
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.imagem > h1{
+        font-size: 2.5em;
+        
+    }
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:710px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-image: linear-gradient(to top, var(--main), var(--title));
+    }
+    
+    main{
+        height: 95vh;
+        width: 100vw;
+        background-image: linear-gradient(to top, var(--main) , var(--title));
+    }
+    div.imagem{
+        display: none;
+    }
+
+    form{
+        height: 500px;
+    }
+
+    form > h2{
+        font-size: 2em;
+    }
+
+    form > label{
+        margin-top: 70px;
+    }
+
+    form > label > span{
+        font-size: 1.2em;
+    }
+
+    form > label > input{
+        height: 50px;
+    }
+
+    form > input[type=submit]{
+        margin-top: 60px;
+    }
+}

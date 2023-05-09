@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Site Responsivo</title>
+
+    <style>
+        @media screen and (max-width:700px){
+            
+
+            header > img{
+                display: none;
+            }
+
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+
+
+        header >img{
+            width: 50px;
+            height: 50px;
+        }
+
+        main > picture > img{
+            display: block;
+            margin: auto;
+        }
+
+        header{
+            margin-bottom: 50px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        nav{
+            display: flex;
+            gap: 25px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            transition: 0.4s;
+            
+        }
+
+        a:hover{
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="imagens/logotipo.png" alt="">
+
+        <nav>
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+            <a href="#">Item 4</a>
+            <a href="#">Item 5</a>
+            <a href="#">Item 6</a>
+            <a href="#">Item 7</a>
+            <a href="#">Item 8</a>
+        </nav>
+
+
+
+    </header>
+
+
+    <main class="principal">
+        <picture>
+            <source media="(max-width: 720px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1015px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="">
+        </picture>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

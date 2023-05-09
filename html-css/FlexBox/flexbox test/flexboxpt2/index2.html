@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste media screen</title>
+    <style>
+        @media screen and (max-width:600px){
+            body > div.conteiner{
+                flex-wrap: wrap;
+            }
+
+            #ch4, #ch3{
+                display: none;
+            }
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.conteiner{
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.child{
+            width: 50%;
+            height: 150px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: 1.5em;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div id="ch3" class="child">3</div>
+        <div id="ch4" class="child">4</div>
+    </div>
+    
+</body>
+</html>

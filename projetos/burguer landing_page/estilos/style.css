@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --vermelho:#d63a25;
+    --branco:#fff;
+    --escuro: #1e1c2a;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    background-color: #fff;
+}
+
+header.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 0.9em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
+}
+
+header > h1{
+    font-size: 1.4em;
+}
+
+header > h1 > span{
+    color: var(--vermelho);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+nav > a.linkmenu{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s;
+
+}
+
+nav > a.linkmenu:hover{
+    color: var(--vermelho);
+}
+
+header.cabecalho > nav > a.linkmenu > i{
+    font-size: 1.4em;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+main > section.conteudo{
+    width: 70%;
+    padding: 120px;
+}
+
+section.conteudo > h2{
+    color: var(--vermelho);
+    
+}
+
+section.conteudo > h2#mdestaque{
+    color: var(--escuro);
+    font-size: 3em;
+    line-height: 1em;
+    margin-top:10px;
+    margin-bottom: 15px;
+    max-width: 700px;
+}
+
+section.conteudo > p{
+    font-size: 0.8em;
+    font-weight: 400
+}
+
+#button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: var(--vermelho);
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 0.7em;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+#button:hover{
+    background-color: #f1422b;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.445);
+}
+
+main > div.imagem{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+main > div.imagem > img{
+    width: 100%;
+    position: relative;
+    right: 9em;
+}
