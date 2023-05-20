@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 'Red Hat Display' */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 'Big Shoulders Display' */
+
+:root{
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite_paragraphs: hsla(0, 0%, 100%, 0.75);
+--Verylightgray_backgroundheadingsbuttons: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 65%;
+}
+
+section div.colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    
+}
+
+section div.colunas img{
+    width: 70px;
+    display: block;
+    
+}
+
+section div.colunas h2{
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 2.2em;
+    color: white;
+    padding: 0px 15px;
+    font-weight: 500;
+}
+
+section div.colunas p{
+    width: 80%;
+    font-family:'Red Hat Display' ;
+    color: var(--Transparentwhite_paragraphs);
+    font-weight: 300;
+}
+
+section div#coluna1{
+    background-color: var(--Brightorange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+section div#coluna2{
+    background-color: var(--Darkcyan);
+}
+
+section div#coluna3{
+    background-color: var(--Verydarkcyan);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+section div.colunas button.botoes{
+    padding: 10px 15px;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;  
+    transition: .4s;
+    cursor: pointer;
+}
+
+section div.colunas button#botao1{
+    color: var(--Brightorange);
+}
+
+section div.colunas button#botao1:hover{
+    background-color: var(--Brightorange);
+    color: white;
+    border: 2px solid white;
+}
+
+section div.colunas button#botao2{
+    color: var(--Darkcyan);
+}
+
+section div.colunas button#botao2:hover{
+    background-color: var(--Darkcyan);
+    color: white;
+    border: 2px solid white;
+}
+
+section div.colunas button#botao3{
+    color: var(--Verydarkcyan);
+}
+
+section div.colunas button#botao3:hover{
+    background-color: var(--Verydarkcyan);
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:1100px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}

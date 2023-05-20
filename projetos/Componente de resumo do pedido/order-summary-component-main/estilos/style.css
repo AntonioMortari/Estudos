@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400; 1.500;1.600;1.700;1.800;1.900 & display=swap');
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --azul: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --azulclaro: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+    
+}
+
+div.imagem{
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/illustration-hero.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.texto{
+    padding: 10px;
+}
+
+div.texto h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--Darkblue);
+}
+
+div.texto p {
+    padding: 0px 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+div.box{
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 5px 30px;  
+    background-color: var(--Verypaleblue); 
+}
+
+div.texto2{
+    position: relative;
+    right: 20px;
+}
+
+div.box h2{
+    font-size: 0.95em;
+}
+
+div.box p {
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+div.box a.link{
+    color: var(--azul);
+}
+
+div.box a.link:hover{
+    text-decoration: none;
+}
+
+div.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.buttons a.button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--azul);
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px rgba(4, 4, 201, 0.397);
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 0.4s;
+}
+
+div.buttons a.button:hover{
+    background-color: var(--azulclaro);
+}
+
+div.buttons a.button2{
+    color: gray;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+div.buttons a.button2:hover{
+    color: rgba(0, 0, 0, 0.733);
+}
