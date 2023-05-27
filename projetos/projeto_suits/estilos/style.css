@@ -1,0 +1,605 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+:root{
+    --maincolor:#d92123;
+    --secondary-text-color:#191919;
+    --secondary-color:#868686;
+    --tertiary-color:#eff3f4;
+    --secondary-bg-color:#5c1011;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+
+#seçao1{    
+    width: 100vw;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/myimg/main_banner3.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#rgb{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+
+
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu h2{
+    background-color: var(--maincolor);
+    color: white;
+    font-family: 600;
+    padding: 13px;
+}
+
+#menu #navegacao ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 30px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-right: 30px;
+}
+
+#menu #navegacao ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: .4s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#menu #navegacao ul li a:hover{
+    
+    background-color: var(--maincolor);
+    
+}
+
+#seçao1-texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 60px 20px;
+}
+.elements{
+    width: 110px;
+    height: 40px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#seçao1-texto h1{
+    font-size: 3em;
+    width: 40%;
+    z-index: 2;
+}
+
+#seçao1-texto p{
+    width: 35%;
+}
+
+#js{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: 270px;
+    left: 30px;
+    margin: 0px;
+}
+
+.buttons{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+#d1{
+    background-color: var(--maincolor);
+
+}
+
+#d2, #d3{
+    background-color: #868686;
+}
+
+/* Seção 2 */
+
+#seçao2{
+    width: 90vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin: auto;
+}
+
+#seçao2-texto{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 15px;
+    font-weight: 600;
+    align-items: end;
+    
+}
+
+#seçao2-texto span{
+    color: var(--maincolor);
+}
+
+#seçao2-texto p{
+    font-size: 1.5em;
+}
+
+#seçao2 a{
+    color: white;
+    background-color: var(--maincolor);
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#seçao2 a:hover{
+    background-color: #e62f32;
+}
+
+#seçao2-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/myimg/employees_banner.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.elementos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: var(--maincolor);
+    text-align: center;
+}
+
+.elementos i{
+    font-size: 2.2em;
+
+}
+
+/* Seção 3 */
+
+#seçao3{
+    width: 90vw;
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 20px;
+}
+
+.seçao3-box{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--tertiary-color);
+    
+}
+
+.seçao3-img{
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seçao3-img i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#seçao3-box1-img{
+    background-image: url(../img/myimg/bank.jpg);
+}
+
+#seçao3-box2-img{
+    background-image: url(../img/myimg/construction.jpg);
+}
+
+
+#seçao3-box3-img{
+    background-image: url(../img/myimg/company.jpg);
+}
+
+
+.seçao3-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 15px;
+}
+
+.seçao3-txt h3{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.seçao3-txt p{
+    text-align: justify;
+    font-size: .8em;
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    
+}
+
+/* Seção 4 */
+
+#seçao4{
+    width: 95vw;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 12px;
+}
+
+#seçao4-red{
+    width: 50%;
+    background-image: url(../img/myimg/pattern.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+}
+
+#seçao4-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#seçao4-sobre h4{
+    font-weight: 600;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+#seçao4-sobre p{
+    font-size:1.7em;
+    font-weight: bolder;
+}
+
+.seçao4-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.seçao4-icons i{
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.seçao4-icons-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.seçao4-icons-txt h5{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.seçao4-icons-txt p{
+    font-weight: 300;
+    font-size: .8em;
+}
+
+#seçao4-numeros{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.seçao4-numeros-child{
+    width: 325px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seçao4-numeros-child i{
+    color: var(--maincolor);
+    font-size: 2.6em;
+}
+
+.seçao4-numeros-child span{
+    font-size: 3.3em;
+    font-weight: 700;
+}
+
+.seçao4-numeros-child p{
+    text-transform: uppercase;
+    font-size: .7em;
+    font-weight: 400;
+}
+
+#seçao4-numeros-child1{
+    border-bottom: 2px solid rgb(206, 205, 205);
+}
+
+#seçao4-numeros-child3{
+    border-left: 2px solid rgb(206, 205, 205);
+    border-bottom: 2px solid rgb(206, 205, 205);
+}
+
+#seçao4-numeros-child4{
+    border-left: 2px solid rgb(206, 205, 205);
+}
+
+/* Seção 5-8 */
+
+a {
+    text-decoration: none;
+    }
+    
+    section.coment1 {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: 90%;
+        margin: auto;
+        padding-top: 15px;
+
+    }
+
+    div.pai1 {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    div.pai1 div {
+        text-align: end;
+        
+    }
+
+    div.pai1 div > h5 {
+        color: #d92123;
+        margin-bottom: 12px;
+    }
+
+    div.pai1 div > p {
+        font-weight: bold;
+        margin-bottom: 15px;
+        
+    }
+
+    div.pai1 div > img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    div.pai2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+        
+    }
+
+    div.pai2 div > img {
+        width: 500px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.137);
+        
+    }
+
+    section.coment2 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 90%;
+        margin: auto;
+        padding-top: 15px;
+        align-items: center;
+    }
+
+    div.text h2 {
+        text-align: center;
+        width:500px;
+    }
+
+    div.text span {
+        color: #d92123;
+    }
+
+    div.fotos {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+       
+    }
+
+    DIV.adv h5 {
+        color: #d92123;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div.adv h6 {
+        text-align: center;
+    }
+
+    div.adv img {
+        width: 160px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.137);
+    }
+
+    div.conteiner {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        background-color: #d92123;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.137);
+        
+    }
+
+    div.conteiner img {
+        width: 650px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.137);
+    }
+
+    div.formulario {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 500px;
+        
+
+    }
+
+    #btn {
+        color: white;
+        border: 1px solid white;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #btn:hover {
+        background-color:white ;
+        color: black;
+        font-weight: bold;
+    }
+
+    form > div > input{
+        margin: 10px;
+    }
+
+    form input {
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        
+    }
+
+    textarea {
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #5c1011;
+        height: 250px;
+        gap: 120px;
+        color: white;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+
+    footer div h4 {
+        background-color: #d92123;
+        padding: 10px;
+    }
+
+    footer div h6 {
+            margin: 15px;
+            font-size: 0.90rem;
+            cursor: pointer;
+        }
+
+    footer > div > h5 {
+        margin-bottom: 20px;
+    }
+
+    div.line h6 {
+        border-bottom: 1px solid white;
+    }
+
+    div.tel h5 {
+        border: 1px solid var(--main-color);
+        margin-top: 15px;
+        text-align: center;
+    }
+  
+
+
+

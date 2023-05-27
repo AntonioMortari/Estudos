@@ -1,0 +1,70 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@keyframes animated-dgd{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 100%;
+    }
+}
+
+@keyframes animation-button{
+    0%{
+        transform: scale(.9);
+        box-shadow: none;
+    }
+    
+    50%{
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px yellow;
+    }
+    
+    100%{
+        transform: scale(1);
+        box-shadow: 7px 7px 20px yellow;
+    }
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient( to left , blue , orangered , yellow); */
+    background-size: 500% 100%;
+    
+}
+
+div.txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+div.txt h1{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    font-weight: 400;
+    background-image: linear-gradient( to left , blue , orangered , yellow);
+    background-size: 500% 100%;
+    animation: animated-dgd 5s linear infinite alternate;
+    
+    
+}
+
+div.txt h1:hover{
+    animation:animation-button 4s linear infinite alternate;
+    
+}
