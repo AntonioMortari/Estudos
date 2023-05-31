@@ -1,0 +1,40 @@
+@charset "UTF_8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 30px; 
+}
+
+nav a{
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    position: relative;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    bottom: 0;
+    left: 0;    
+    transition: .6s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
