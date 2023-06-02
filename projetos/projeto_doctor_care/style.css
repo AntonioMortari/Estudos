@@ -35,25 +35,65 @@ main{
     gap: 0px;
 }
 
+/* Menu scroll */
+#section1-header.hscroll{
+    background-color: var(--brand-green);
+    box-shadow: 0px 0px 5px var(--gray-headline);
+}
+
+#section1-header.hscroll h1{
+    color: white;
+    font-weight: normal;
+}
+
+#section1-header.hscroll h1 span{
+    color: white;
+    font-weight: bold;
+}
+
+#section1-header.hscroll nav ul li a{
+    color: var(--brand-green-light);
+}
+
+
+.hscroll #section1-menu a::after{
+    background-color: var(--white);
+}
+
+
+.hscroll #section1-menu a:hover{
+    color: white;
+}
+
+#section1-header.hscroll button{
+    background-color: var(--brand-green);
+    border: 2px solid var(--brand-green-light);
+    color: white;
+}
+
+#section1-header.hscroll button:hover{
+    background-color: var(--white);
+    color: var(--brand-green);
+    border: 2px solid var(--brand-green);
+}
+/* Menu */
 
 #section1-header{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 15px 90px;
+    position: fixed;
     background-color: var(--brand-green-light);
+    z-index: 10000;
+    transition: .4s;
 }
-
-.fixed{
-    background-color: var(--brand-green);
-    color: var(--brand-green-light-02);
-}
-
-
 
 #section1-header h1{
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 #section1-header h1 span{
@@ -73,6 +113,7 @@ main{
     position: relative;
     margin-bottom:10px ;
 }
+
 
 #section1-menu a::after{
     content: ' ';
@@ -157,6 +198,11 @@ main{
     text-align: center;
     transition: .3s;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 #section1-text button:hover{
@@ -171,9 +217,10 @@ main{
 
 
 #section1-img img{
-    width: 90%;
+    width: 80%;
     position:relative;
-    bottom: 20px;
+    top: 30px;
+    bottom: 0px;
 }
 
 /* div */
@@ -192,6 +239,7 @@ main{
     align-items: center;
     gap: 10px;
     padding: 25px;
+    border-radius: 7px;
 }
 
 .num{
@@ -475,4 +523,113 @@ footer{
 #footer-icons i:hover{
     transform: scale(1.5);
     color: var(--brand-green-light);
+}
+
+@media screen and (max-width:940px){
+
+    #section1-text h2{
+        font-size: 2rem;
+    }
+
+    #section1-text button{
+        width: 70%;
+    }
+
+    #section1-text{
+        padding: 0px 4%;
+    }
+
+    #section4{
+        padding: 0px 30px;
+        gap:40px;
+    }
+
+    #section4-text h3{
+        font-size: 2rem;
+        /* width: 100%; */
+    }
+
+    #section4-text button{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width :800px){
+    #section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1080px;
+    }
+
+    #section1-text{
+        text-align: center;
+        width: 70%;
+        padding: 0px;
+    }
+
+    #section1-text p{
+        margin: auto;
+    }
+
+    #section1-text button{
+        width: 50%;
+        margin: auto;
+    }
+
+    #section1-img img{
+        display: block;
+        margin: auto;
+        width: 100%;
+        top: 100px;
+    }
+
+    #number{
+        height: 470px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #number .num p{
+        font-size: 4rem;
+    }
+
+    #number span.linha{
+        display: none;
+    }
+
+    #section3{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    #section3-text{
+        width: 70%;
+    }
+
+    #section3-text span{
+        font-size: 1rem;
+    }
+
+    #section3-text h3{
+        width: 100%;
+        font-size: 2.2rem;
+    }
+
+    #section3-img{
+        width: 70%;
+    }
+
+
+    #section4-text h3{
+        width: 100%;
+        font-size: 2rem;
+    }
 }
