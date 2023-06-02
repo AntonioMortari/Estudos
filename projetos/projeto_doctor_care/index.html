@@ -54,7 +54,7 @@
                     Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.
                 </p>
 
-                <button>
+                <button class="btn">
                     <i class="bi bi-whatsapp"></i>
                     Agende sua consulta
                 </button>
@@ -164,8 +164,55 @@
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
             </div>
         </section>
+
+        <section id="section4">
+            <div id="section4-text">
+                <h3>Entre em contato com a gente!</h3>
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    R. Amauri Souza, 346
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    contato@doctorcare.com
+                </p>
+
+                <button>
+                    <i class="bi bi-whatsapp"></i>
+                    Agende sua consulta
+                </button>
+            </div>
+
+            <div id="section4-img">
+
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-text">
+                <h2>Doctor<span>Care</span></h2>
+                <p>©2022 - DoctorCare.</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+
+            <div id="footer-icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-bezier2"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </footer>
     </main>
 
+    <script>
+        var cabecalho = document.getElementById('section1-header')
+
+        function fixed(){
+            cabecalho.classList.add('fixed')
+        }
+
+        cabecalho.addEventListener('scroll' , fixed)
+    </script>
     
 </body>
 </html>
