@@ -186,10 +186,20 @@ li{
     background-color: var(--yellow);
     position: relative;
     top: 15px;
+    transition: .5s;
+}
+
+.yellow:hover{
+    transform: translateY(30px);
 }
 
 .orange{
     background-color: var(--orange);
+    transition: .5s;
+}
+
+.orange:hover{
+    transform: translateY(-30px);
 }
 
 .section2-child p{
