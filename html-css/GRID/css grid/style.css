@@ -1,0 +1,38 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 100vh;
+    grid-template-areas: "h h h" "m m a" "f f f";
+    gap: 10px;
+}
+
+header{
+    background-color: yellow;
+    grid-area: h;
+    height: 100px;
+}
+
+main{
+    background-color: blue;
+    grid-area: m;
+    
+}
+
+aside{
+    background-color: orange;
+    grid-area: a;
+}
+
+footer{
+    background-color: red;
+    grid-area: f;
+    height: 100px;
+}
+
