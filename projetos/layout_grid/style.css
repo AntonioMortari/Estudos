@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #7159c1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 65vh 10vh;
+    grid-template-areas: "h h" "a m" "f f";
+    gap: 10px;
+    
+}
+
+header ,aside, main, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
+header{
+    background: yellow;
+    grid-area: h;
+    
+}
+
+main{
+    background: blue;
+    grid-area: m;
+    
+    
+}
+
+aside{
+    background:green;
+    grid-area: a;
+    
+}
+
+footer{
+    background: red;
+    grid-area: f;
+    
+}

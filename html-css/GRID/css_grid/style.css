@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.conteiner{
+    background-color: black;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    justify-items: end;
+    align-items: center;
+}
+
+.conteiner > div{
+    
+    background-color: #7159c1;
+    transition: .3s;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.conteiner > div:hover{
+    transform: scale(1.2);
+    background-color: #927be0;
+}
+
+.conteiner > div:active{
+    background-color: #5134b3;
+}
