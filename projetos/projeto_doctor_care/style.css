@@ -99,37 +99,9 @@ main{
 #section1-header h1 span{
     color: var(--brand-green);
 }
-
-
-
-#burguer{
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: var(--gray-paragraph);
-    border-radius: 2px;
+#btn-mobile{
+    display: none;
 }
-
-#burguer::before{
-    content: ' ';
-    display: block;
-    width: 17px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--gray-paragraph);
-    margin-bottom: 2px;
-}
-
-#burguer::after{
-    content: ' ';
-    display: block;
-    width: 15px;
-    height: 2px;
-    background-color: var(--gray-paragraph);
-    border-radius: 2px;
-    margin-top: 2px;
-}
-
 #section1-menu{
     display: flex;
     flex-direction: row;
@@ -585,6 +557,10 @@ footer{
 }
 
 @media screen and (max-width :800px){
+    #section1-header{
+        padding: 10px;
+    }
+
     #section1{
         display: flex;
         flex-direction: column;
@@ -665,22 +641,66 @@ footer{
 }
 
 @media screen and (max-width:650px){
+    #btn-mobile{
+        display: block;
+        padding: 1rem;
+        background: none;
+        font-size: 1rem;
+        color: red;
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after{
+        width: 20px;
+        height: 2px;
+    }
+    
+    #section1-menu{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: var(--brand-green);
+        z-index: 1000;
+        color: var(--brand-beige);
+        height: 0px;
+        transition: .6s;
+        overflow-y: hidden;
+    }
+    
+    #section1-menu li a{
+        display: block;
+        color: var(--brand-beige);
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,.05);
+        text-align: center;
+    }
+    
+    #btn-header{
+        display: none;
+    }
+    
     #section1-header{
         padding: 20px;
         justify-content: space-between;
     }
-
-    #section1-menu{
-        display: none;
+    
+    #section1-nav.active #section1-menu{
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        
     }
 
-    #section1-header button{
-        display: none;
-    }
-
-    #burguer{
-        display: block;
-    }
+    
 
     #section2{
         bottom: 500px;

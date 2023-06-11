@@ -5,3 +5,12 @@ window.addEventListener('scroll', function(){
 })
 
 //Menu hamburguer
+
+var btn_mobile = document.getElementById('btn-mobile')
+
+function toggleMenu(){
+    var nav = document.getElementById('section1-nav')
+    nav.classList.toggle('active')
+}
+
+btn_mobile.addEventListener('click', toggleMenu)
