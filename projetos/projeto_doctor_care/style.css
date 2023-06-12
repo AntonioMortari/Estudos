@@ -78,6 +78,15 @@ main{
 }
 /* Menu */
 
+#menu-mobile{
+    display: none;
+}
+
+.btn-mobile{
+    width: 30px;
+    display: none;
+}
+
 #section1-header{
     width: 100%;
     display: flex;
@@ -641,63 +650,67 @@ footer{
 }
 
 @media screen and (max-width:650px){
-    #btn-mobile{
-        display: block;
-        padding: 1rem;
-        background: none;
-        font-size: 1rem;
-        color: red;
+    #section1-nav{
+        display: none;
     }
-
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after{
-        width: 20px;
-        height: 2px;
-    }
-    
-    #section1-menu{
-        display: flex;
-        flex-direction: column;
-        visibility: hidden;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: var(--brand-green);
-        z-index: 1000;
-        color: var(--brand-beige);
-        height: 0px;
-        transition: .6s;
-        overflow-y: hidden;
-    }
-    
-    #section1-menu li a{
-        display: block;
-        color: var(--brand-beige);
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0,0,0,.05);
-        text-align: center;
-    }
-    
     #btn-header{
         display: none;
+    }
+    #btn-open{
+        display: block;
+        margin-left: 200px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    #btn-open:hover{
+        transform: scale(1.1);
+    }
+
+    #menu-mobile{
+        background-color: #00856F;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 70px;
+        left: 10;
+    }
+    
+    #menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    #menu-mobile ul li a{
+        color: var(--brand-green-light);
+        font-size: 1.4rem;
+
+    }
+
+    #menu-mobile ul li a::after{
+        background-color: var(--brand-beige);
+    }
+
+    #menu-mobile.active{
+        display: block;
+    }
+
+    #menu-mobile.active button{
+        display: block;
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    #menu-mobile.active button:hover{
+        border: 1px solid var(--brand-green-light);
+        
     }
     
     #section1-header{
         padding: 20px;
         justify-content: space-between;
-    }
-    
-    #section1-nav.active #section1-menu{
-        visibility: visible;
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-        
     }
 
     
@@ -748,6 +761,8 @@ footer{
     }
 
     #section4-img {
+        display: block;
+        margin-left: 60px;
         width: 100%;
         height: 400px;
     }
