@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgb(59,88,93), rgb(29,40,42));
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    padding: 60px;
+}
+
+#play-name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+#below-cover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
+#music-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#band-name{
+    color: rgb(139,153,156);
+    font-weight: 200;
+}
+
+#button-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button{
+    font-size: 1.5rem;
+}
+
+#play{
+    font-size: 4rem;
+    margin-left: 40px;
+}
+
+.navegation{
+    font-size: 3rem;
+}
+
+.arrows{
+    font-size: 1rem
+}
+
+#heart{
+    font-size: 1.3rem;
+}
+
+#pause{
+    display: none;
+    font-size: 4rem;
+}
+
+#progress-bar{
+    height: 3px;
+    background-color: rgb(139,153,156);
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#current-progress{
+    height: inherit;
+    background-color: white;
+    width: 50%;
+    border-radius: inherit;
+}
+
+#button-conteiner button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+/* @media screen and (min-width:800px){
+    body{
+        gap: 20px;
+    }
+
+    img{
+        width: 30%;
+    }
+} */
+
+
+
