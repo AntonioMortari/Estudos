@@ -6,6 +6,7 @@ const play = document.getElementById('play');
 const pause = document.getElementById('pause');
 const next = document.getElementById('skip')
 const previous = document.getElementById('return')
+const currentProgress = document.getElementById('current-progress')
 
 const asYouWere = {
     songName : 'As You Were',
@@ -83,9 +84,16 @@ function previousSong(){
     playSong()
 }
 
+function updateProgressBar(){
+
+}
+
+
+
 play.addEventListener('click' , playDecider)
 pause.addEventListener('click' , playDecider)
 previous.addEventListener('click' , previousSong)
 next.addEventListener('click', nextSong)
+song.addEventListener('timeupdate' , updateProgressBar)
 
 

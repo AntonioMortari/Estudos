@@ -1,0 +1,47 @@
+let option =3
+
+let livro1 = {
+    autor: 'George Orwell',
+    titulo:'1984'
+}
+
+let livro2 = {
+    autor: 'George Orwell',
+    titulo:'A revolução dos bichos'
+}
+
+let livro3 = {
+    autor: 'Jordan Peterson',
+    titulo:'12 regras para a vida'
+}
+
+let livros = [livro1,livro2,livro3]
+
+const mostrarTitulos = () =>{
+    for (c = 0 ; c<=2 ; c++){
+        console.log(livros[c].titulo)
+    }
+}
+
+const mostrarAutores = () =>{
+    for(c = 0 ; c<=2 ; c++){
+        console.log(livros[c].autor)
+    }
+}
+
+const mostrarLivro = () =>{
+    for(c = 0 ; c<=2 ; c++){
+        console.log(livros[c].autor)
+        console.log(livros[c].titulo)
+        console.log('-------------------------')
+    }
+}
+
+if(option == 1){
+    mostrarTitulos()
+}else if (option ==2){
+    mostrarAutores()
+}else{
+    mostrarLivro()
+}
+

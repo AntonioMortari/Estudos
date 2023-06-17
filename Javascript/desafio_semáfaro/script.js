@@ -3,16 +3,16 @@ const yellow = document.getElementById('yellow')
 const green = document.getElementById('green')
 const auto = document.getElementById('auto')
 const img = document.getElementById('img')
-index = 0
+index = 2
 
 
 colors = {
-    red :'vermelho',
+    green :'verde', 
     yellow :'amarelo',
-    green :'verde' 
+    red :'vermelho'
 }
 
-const changecolors = [colors.red , colors.yellow , colors.green]
+const changecolors = [colors.green , colors.yellow , colors.red]
 
 function changeColorAuto(){
     img.src = `img/${changecolors[index]}.png`
