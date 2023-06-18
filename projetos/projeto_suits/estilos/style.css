@@ -19,6 +19,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
     width: 100vw;
@@ -32,7 +36,6 @@ main{
     flex-direction: column;
     gap: 50px;
 }
-
 
 
 
@@ -150,6 +153,7 @@ main{
 /* Seção 2 */
 
 #seçao2{
+    padding-top: 2rem;
     width: 90vw;
     height: 500px;
     display: flex;
@@ -221,6 +225,7 @@ main{
 /* Seção 3 */
 
 #seçao3{
+    padding-top: 2rem;
     width: 90vw;
     height: 520px;
     display: flex;
@@ -294,6 +299,7 @@ main{
 /* Seção 4 */
 
 #seçao4{
+    padding-top: 2rem;
     width: 95vw;
     height: 450px;
     display: flex;
