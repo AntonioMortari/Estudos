@@ -1,14 +1,8 @@
-/* <div class="note">
-            <h3>Título da nota</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus perferendis facere nihil laborum dolor sunt eaque, saepe inventore perspiciatis at commodi assumenda aliquam. Quam ex ducimus eveniet nihil corrupti!</p>
-            <button class="remove-note">
-                <i class="bi bi-trash3"></i>
-            </button>
-        </div> */
 
 let addnote = document.getElementById('add-note')
 let pai = document.querySelector('#notes')
 let removeall = document.getElementById('remove-all')
+
 
 
 const addNote = () =>{
@@ -25,9 +19,12 @@ const addNote = () =>{
         div.classList.add('note')
         div.innerHTML = `
     <h3>${titleNote}</h3>
-    <p>${note}</p>
+    <p class="txt">${note}</p>
     <button class="remove-note">
         <i class="bi bi-trash3"></i>
+    </button>
+    <button class="edit-note">
+        <i class="bi bi-pencil-square"></i>
     </button>
     `
 
@@ -41,6 +38,7 @@ const addNote = () =>{
 
 }
 
+//remover todas as notas
 const removeAll = () =>{
     let confirmed = confirm('Tem certeza que deseja apagar todas as notas?')
     // let divs = document.querySelectorAll('.note')
@@ -52,10 +50,31 @@ const removeAll = () =>{
     }
 }
 
+//remover nota
 const removeNote = (event) => {
     event.target.closest('.note').remove();
     // removenote.remove();
 };
+
+// //editar nota
+// const editNote = (event) =>{
+//     event.target.classList.toggle('bi-pencil-square')
+//     event.target.classList.toggle('bi-check2')
+
+//     if(event.target.classList.contains('bi-check2')){
+//         let note = event.target.closest('.note')
+//         let div = event.target.closest('.txt')
+//         let input = document.createElement('input')
+//         let conteudo = div.textContent
+//         input.type = 'text'
+//         input.value = conteudo
+//         input.classList.add('input-edit')
+//         div.replaceWith(input)
+//         input.select()
+//         note.appendChild(input)
+        
+//     }
+// }
 
 addnote.addEventListener('click', addNote);
 removeall.addEventListener('click', removeAll);
@@ -64,5 +83,10 @@ pai.addEventListener('click', (event) => {
         removeNote(event);
     }
 });
+pai.addEventListener('click', (event) => {
+    if(event.target.classList.contains('edit-note') || event.target.classList.contains('bi-pencil-square') || event.target.classList.contains('bi-check2')){
+        editNote(event)
+    }
+})
 
 
