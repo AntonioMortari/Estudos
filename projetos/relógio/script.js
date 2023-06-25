@@ -12,9 +12,21 @@ const attTime = () =>{
     let m = date.getMinutes()
     let s = date.getSeconds()
 
+    //mostrar hora
+    if(h < 10){
+        hour.innerText = '0'+ h
+    }else{
+        hour.innerText = h
+    }
 
-    hour.innerText = h
-    minute.innerText = m
+    //mostrar minuto
+    if(m < 10){
+        minute.innerText = '0'+ m
+    }else{
+        minute.innerText = m
+    }
+
+    //mostrar segundo
     if(s  < 10 ){
         second.innerText = '0'+s
     }else{
