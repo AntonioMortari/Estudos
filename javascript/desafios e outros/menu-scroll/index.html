@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu scroll</title>
+</head>
+<body>
+    
+    <header id="header">
+        <div class="conteiner">
+
+            <div class="flex">
+                <h1>Logo</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Passagens</a></li>
+                        <li><a href="#">Destino</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn-contato">
+                    <a href="#"><button>Contato</button></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>Descubra um novo mundo</h1>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            var header = document.getElementById('header')
+            header.classList.toggle('scroll', window.scrollY > 1000)
+        })
+    </script>
+    
+</body>
+</html>

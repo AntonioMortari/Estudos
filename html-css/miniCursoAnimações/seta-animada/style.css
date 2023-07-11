@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes animation-arrow-down{
+    to{
+        transform: translateY(40px);
+    }
+}
+
+body{height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    font-size: 7rem;
+    animation: animation-arrow-down 1s ease-in-out infinite alternate;
+}
