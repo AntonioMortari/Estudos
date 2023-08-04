@@ -1,5 +1,0 @@
-print("=======Desafio 2====")
-diaNascimento = input("Em qual dia do mês você nasceu? (ex:21)")
-mesNascimento = input("Em qual mês você nasceu? (ex: 03 ou 'Mar')")
-anoNascimento = input("Em qual ano você nasceu?")
-print("Sua data de nascimento é: ", diaNascimento,"/", mesNascimento,"/", anoNascimento)
